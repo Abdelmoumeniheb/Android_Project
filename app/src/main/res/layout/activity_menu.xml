@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/top_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:paddingHorizontal="40dp"
+        android:paddingVertical="10dp"
+        app:contentInsetStart="16dp"
+        app:contentInsetEnd="16dp"
+        app:contentInsetStartWithNavigation="0dp">
+        <ImageView
+            android:id="@+id/notifications_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/baseline_arrow_back"
+            app:tint="#000000"
+            android:backgroundTint="#000000"
+            android:layout_gravity="start"
+            android:paddingEnd="8dp" />
+        <TextView
+
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:textStyle="bold" />
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <LinearLayout
+        android:id="@+id/Your_favorites"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/top_app_bar"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_height="50dp"
+        android:paddingHorizontal="20dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/favorite24"
+            android:contentDescription="Favorites icon"/>
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Your Favorites"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chevron_right"
+            android:contentDescription="More icon"/>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/Your_favorites"
+        android:layout_marginBottom="0dp"
+        android:background="#F3F3F3"/>
+    <LinearLayout
+        android:id="@+id/address"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/view1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_height="50dp"
+        android:paddingHorizontal="20dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home"
+            android:contentDescription="Favorites icon"/>
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Address managment"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chevron_right"
+            android:contentDescription="More icon"/>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/view2"
+        android:layout_below="@id/address"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="0dp"
+        android:background="#F3F3F3"/>
+    <LinearLayout
+        android:id="@+id/payment"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/view2"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_height="50dp"
+        android:paddingHorizontal="20dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/payments"
+            android:contentDescription="Favorites icon"/>
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Payment managment"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chevron_right"
+            android:contentDescription="More icon"/>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/view3"
+        android:layout_below="@id/payment"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="0dp"
+        android:background="#F3F3F3"/>
+    <LinearLayout
+        android:id="@+id/promtion"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/view3"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_height="50dp"
+        android:paddingHorizontal="20dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/favorite24"
+            android:contentDescription="Favorites icon"/>
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Your promotion"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chevron_right"
+            android:contentDescription="More icon"/>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/view4"
+        android:layout_below="@id/promtion"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="0dp"
+        android:background="#F3F3F3"/>
+    <LinearLayout
+        android:id="@+id/Ordernow"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/view4"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_height="50dp"
+        android:paddingHorizontal="20dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/list"
+            android:contentDescription="Favorites icon"/>
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Order now"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chevron_right"
+            android:contentDescription="More icon"/>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/view5"
+        android:layout_below="@id/Ordernow"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="0dp"
+        android:background="#F3F3F3"/>
+    <LinearLayout
+        android:id="@+id/orderhistory"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/view5"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_height="50dp"
+        android:paddingHorizontal="20dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/list"
+            android:contentDescription="Favorites icon"/>
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Order history"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chevron_right"
+            android:contentDescription="More icon"/>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/view6"
+        android:layout_below="@id/orderhistory"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="0dp"
+        android:background="#F3F3F3"/>
+    <LinearLayout
+        android:id="@+id/support"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/view6"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_height="50dp"
+        android:paddingHorizontal="20dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/help"
+            android:contentDescription="Favorites icon"/>
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Support center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chevron_right"
+            android:contentDescription="More icon"/>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/view7"
+        android:layout_below="@id/support"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="0dp"
+        android:background="#F3F3F3"/>
+    <Button
+        style="?attr/materialButtonStyle"
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log out"
+        android:layout_below="@id/view7"
+        android:layout_marginTop="150dp"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/holo_red_light"
+        android:textAllCaps="false"
+        tools:ignore="NotSibling" />
+</RelativeLayout>

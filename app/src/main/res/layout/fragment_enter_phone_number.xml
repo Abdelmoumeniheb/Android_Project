@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragemnts_signup.EnterPhoneNumber">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Keep your phone we will texted you a verification\ncode to your phone number"
+        android:textColor="@color/color_1_page_singin"
+        android:id="@+id/description"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:textColor="@color/black"
+        android:layout_below="@id/description"
+        android:id="@+id/phonenumber_text"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phonenumber_text"
+        android:id="@+id/phonenumber_edit"
+        android:hint="Enter your phone number"
+        android:textColorHint="@color/color_1_page_singin"
+        android:inputType="text"
+        android:backgroundTint="@color/color_2_page_singin"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/secondly"
+        android:layout_below="@id/phonenumber_edit"
+        android:id="@+id/PhoneNumberErrorText"
+        android:clickable="false"
+        android:focusable="false"
+        />
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PhoneNumberErrorText"
+        android:layout_marginTop="43dp"
+        app:cornerRadius="10dp"
+        android:backgroundTint="@color/back_continue_singin"
+        android:paddingVertical="10dp"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="@color/txt_continue_singin" />
+
+</RelativeLayout>

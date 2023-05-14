@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Food_Delivery</string>
+    // welcome activity
+    <string name="first_txt_welcome_actv">A wonderful serenity \ntaken possession</string>
+    <string name="second_txt_welcome_actv">I am alone and feel the charm of existence in this \nspot, which was created for the bliss</string>
+    <string name="first_btn_txt_welcome_actv">Create a new account</string>
+    <string name="second_btn_txt_welcome_actv">Sign in</string>
+    <string name="third_btn_txt_welcome_actv">Continue With Google</string>
+
+    // onboarding activity
+    <string name="first_txt_first_onboarding_actv">Shop from your \n favorite restaurant</string>
+    <string name="second_txt_first_onboarding_actv">A diverse list of different dining \n restaurants throughout the territory and \n around your are carefully selected</string>
+    <string name="first_txt_second_onboarding_actv">Quick delivery to \n your doorstep</string>
+    <string name="second_txt_second_onboarding_actv">We have a dynamic and professional \n delivery team that is professionally and \nintelligently trained</string>
+    <string name="first_txt_third_onboarding_actv">Convenience e-wallet \napp connecting</string>
+    <string name="second_txt_third_onboarding_actv">A diverse list of different dining \nrestaurants throughout the territory and \naround your area carefully selected</string>
+    <string name="next_btn_txt_onboarding_actv">Next</string>
+    <string name="getstarted_btn_txt_onboarding_actv">Get started</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="btn">btn142</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

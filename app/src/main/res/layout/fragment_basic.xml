@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    tools:context=".Fragements_Home.BasicFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:backgroundTint="@color/white"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/first_layout"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/top_app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:scaleType="centerCrop"
+                android:background="@color/secondly"
+                android:elevation="4dp"
+                android:paddingHorizontal="40dp"
+                android:paddingVertical="10dp"
+                app:contentInsetStart="16dp"
+                app:contentInsetEnd="16dp"
+                app:contentInsetStartWithNavigation="0dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/toolbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delivery to "
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/textViewaddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delivery to"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/menu_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/menu"
+                    app:tint="#FFFFFF"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="end"
+                    android:paddingEnd="16dp" />
+                <View
+                    android:id="@+id/view7"
+                    android:layout_width="2dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="end"
+                    android:background="#F3F3F3"/>
+
+                <ImageView
+                    android:id="@+id/notifications_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/notifications"
+                    app:tint="#FFFFFF"
+                    android:layout_gravity="end"
+                    android:paddingEnd="8dp" />
+
+
+            </com.google.android.material.appbar.MaterialToolbar>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/search_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:backgroundTint="@color/white"
+                android:hint="Search name,restaurant"
+                android:layout_below="@id/top_app_bar"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:cardElevation="1dp"
+                app:cardUseCompatPadding="true">
+
+                <EditText
+                    android:id="@+id/search_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/search24"
+                    android:drawablePadding="8dp"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_app_bar"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp"
+                android:layout_marginTop="80dp"
+                android:id="@+id/first_txt"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Popular in your area"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="See more"
+                    android:textColor="@color/secondly"
+                    android:gravity="end"
+                    />
+            </LinearLayout>
+            <HorizontalScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:layout_below="@id/first_txt">
+
+            </HorizontalScrollView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Explore more"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:textSize="20dp"
+                android:id="@+id/second_txt"
+                android:layout_below="@id/scrollView"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FEFAFD"
+    android:padding="20dp"
+    tools:context=".Signin">
+
+    <LinearLayout
+        android:id="@+id/first_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/rounded_icon_button"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/secondly_2"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:gravity="center"
+            android:padding="16dp"
+            app:cornerRadius="100dp"
+            app:icon="@drawable/baseline_arrow_back_ios_24"
+            app:iconTint="@color/secondly" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/signin_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_linear"
+        android:layout_marginTop="20dp"
+        android:text="Sign in"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/second_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signin_text"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New user?"
+            android:textColor="@color/color_1_page_singin" />
+
+        <TextView
+            android:id="@+id/create_account_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="Create an account"
+            android:textColor="@color/primary_txt" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/email_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/second_linear"
+        android:layout_marginTop="20dp"
+        android:text="Email"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/email_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_text"
+        android:backgroundTint="@color/color_2_page_singin"
+        android:hint="Enter your email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/color_1_page_singin" />
+
+    <TextView
+        android:id="@+id/emailerrorEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_edit"
+        android:clickable="false"
+        android:focusable="false"
+        android:text=""
+        android:textColor="@color/secondly" />
+
+    <TextView
+        android:id="@+id/password_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailerrorEditText"
+        android:text="Password"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/password_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_text"
+        android:backgroundTint="@color/color_2_page_singin"
+        android:hint="••••••••"
+        android:inputType="textPassword"
+        android:textColorHint="@color/color_1_page_singin" />
+
+    <TextView
+        android:id="@+id/passworderrorEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_edit"
+        android:clickable="false"
+        android:focusable="false"
+        android:text=""
+        android:textColor="@color/secondly" />
+
+    <Button
+        android:id="@+id/signin_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_edit"
+        android:layout_marginTop="43dp"
+        android:backgroundTint="@color/back_continue_singin"
+        android:paddingVertical="10dp"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="@color/txt_continue_singin"
+        app:cornerRadius="10dp" />
+
+    <TextView
+        android:id="@+id/reset_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signin_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="310dp"
+        android:text="Reset your password"
+        android:textColor="@color/primary_txt" />
+
+</RelativeLayout>

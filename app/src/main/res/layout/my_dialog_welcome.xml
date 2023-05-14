@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:backgroundTint="@color/white"
+    >
+
+    <ImageView
+        android:id="@+id/img_permission"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/img_permission" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_permission"
+        android:layout_below="@id/img_permission"
+        android:text="Location permission"
+        android:layout_marginTop="10dp"
+        android:textSize="26dp"
+        android:gravity="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/desc_permission"
+        android:layout_below="@id/txt_permission"
+        android:text="Allow location access to konw your \n addressa nd provide the best experince "
+        android:textSize="16dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#828282"
+        android:gravity="center"
+        />
+
+    <Button
+        style="?attr/materialButtonOutlinedStyle"
+        android:id="@+id/btn_permission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Allow Access"
+        app:cornerRadius="10dp"
+        android:layout_marginTop="10dp"
+        app:strokeColor="@color/secondly"
+        android:layout_below="@id/desc_permission"
+        android:backgroundTint="@android:color/white"
+        app:strokeWidth="1dp"
+        android:textColor="@android:color/holo_red_light"
+        android:textAllCaps="false"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_permission"
+        android:id="@+id/txt_permission2"
+        android:text="test1"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_permission2"
+        android:id="@+id/txt_permission3"
+        android:text="test2"
+        />
+</RelativeLayout>

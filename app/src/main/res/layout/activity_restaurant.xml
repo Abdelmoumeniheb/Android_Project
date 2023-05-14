@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    tools:context=".restaurantActivity">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/top_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="0dp"
+        android:paddingHorizontal="40dp"
+        android:paddingVertical="10dp"
+        app:contentInsetStart="16dp"
+        app:contentInsetEnd="16dp"
+        app:contentInsetStartWithNavigation="0dp">
+        <ImageView
+            android:id="@+id/notifications_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/baseline_arrow_back"
+            app:tint="#000000"
+            android:backgroundTint="#000000"
+            android:layout_gravity="start"
+            android:paddingEnd="8dp" />
+        <Button
+            android:id="@+id/rounded_icon_button"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            app:iconSize="30dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:gravity="center"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp"
+            android:padding="4dp"
+            app:cornerRadius="100dp"
+            android:layout_gravity="end"
+            app:icon="@drawable/favorite"
+            app:iconTint="@color/black" />
+
+    </com.google.android.material.appbar.MaterialToolbar>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="400dp"
+        android:layout_height="180dp"
+        android:layout_below="@id/top_app_bar"
+        android:scaleType="centerCrop"
+        android:src="@drawable/res6" />
+    <!-- The linear layout with white background positioned at the bottom of the image view -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="502dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="1dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- The restaurant name text view -->
+            <TextView
+                android:id="@+id/restaurantNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your restaurant name" />
+
+            <TextView
+                android:id="@+id/restaurantCategoriesTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your restaurant categories" />
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Liste of the Food"
+        android:layout_marginTop="60dp"
+        android:textStyle="bold"
+        android:layout_below="@id/imageView"
+        android:paddingLeft="20dp"
+        android:textSize="20dp"
+        android:id="@+id/second_txt"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rcvfood"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="20dp"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_below="@id/second_txt"
+        android:backgroundTint="@color/white"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        />
+</RelativeLayout>
